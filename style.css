@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: helvetica;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 1000px;
+}
+
+/* header */
+#navbar {
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(31, 31, 114);
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+#navbar img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 100px;
+  size: 50px 40px;
+}
+
+#navbar p {
+  font-size: 12px;
+  margin: 16px;
+  font-weight: 500;
+}
+
+#navbar #li1 {
+  font-size: 23px;
+  font-weight: bold;
+}
+#navbar li {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+#navbar #con {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 0 20rem;
+  font-weight: 400;
+}
+
+#navbar #con p {
+  display: flex;
+}
+
+/* navbar */
+.daftar {
+  width: 100%;
+  height: 5vh;
+  background-color: orange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.daftar a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  font-size: 15px;
+  padding: 4px 9px 3px 8px;
+  border-radius: 5px;
+}
+
+.daftar a:hover {
+  background-color: rgb(208, 140, 14);
+  transition: 0.2s linear;
+}
+
+/* fotoguru */
+.fotoguru {
+  padding-top: 10px;
+  position: relative;
+}
+
+.fotoguru img {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* teks on image */
+#quote {
+  width: 65.5%;
+  height: 100px;
+  opacity: 75%;
+  background-color: #111b51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 17%;
+  right: 8%;
+  border: 1px solid #fff;
+  bottom: 0; /* atau top: 0; */
+  color: white;
+}
+
+/* beritamarqueee */
+#berita {
+  color: white;
+  background-color: #111b51;
+  width: 65.5%;
+  left: 232px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+#berita #kutipan {
+  background-color: orangered;
+  padding: 10px 10px 20px 10px;
+}
+
+#berita h4 {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  border-bottom: 1px solid white;
+  padding: 0 0 0 0;
+  font-weight: 700;
+  font-family: helvetica;
+}
+
+#berita marquee {
+  font-size: 16px;
+}
+
+/*banner*/
+#banner {
+  padding: 0.1rem 0 0 0;
+}
+
+#banner img {
+  width: 100%;
+  height: 20vh;
+}
+
+.card-info {
+  flex: 1;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 12px 2rem;
+  padding-top: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-info h5 {
+  font-size: 25px;
+  order: -1; /* Memindahkan h5 ke atas */
+}
+
+.card-info #info-content {
+  max-width: 60%;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.card-info #info-content {
+  display: flex;
+  order: 1;
+  flex-direction: row; /* Menjadikan konten gambar dan teks berbaris */
+  flex-wrap: wrap;
+}
+
+.card-info #info-content img {
+  cursor: pointer;
+  max-width: 40%;
+  max-height: 40%;
+  padding: 0 3rem 0 3rem;
+}
+
+.card-info #info-content a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-weight: 700;
+  padding-left: 3rem;
+}
+
+.card-info #info-content p {
+  padding: 5px 0 0 3rem;
+}
+
+.card-info #info-content a:hover {
+  color: rgb(57, 103, 150);
+}
+
+.kepalasekolah {
+  position: relative;
+  bottom: 114rem;
+  flex: 2;
+  order: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 6rem;
+  left: 260px;
+  flex-wrap: wrap;
+}
+
+.kepalasekolah #kepalasekolah-content {
+  border: 1px solid #000;
+  text-align: center;
+  padding-bottom: 1.2rem;
+  max-width: 320px;
+}
+
+.kepalasekolah #kepalasekolah-content img {
+  max-width: 320px;
+}
+
+.kepalasekolah #kepalasekolah-content h4 {
+  padding: 15px 0 10px 0;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+.kepalasekolah #kepalasekolah-content h5 {
+  font-size: 15px;
+  font-weight: 100;
+  padding-top: 5px;
+}
+
+.kepalasekolah #kepalasekolah-content p {
+  text-align: justify;
+  padding: 20px;
+}
+
+.kepalasekolah #kepalasekolah-content span {
+  font-size: 14px;
+}
+
+#kepalasekolah-tautan h1 {
+  position: relative;
+  right: 20rem;
+  border-bottom: 2px solid rgb(200, 141, 40);
+  width: 320px;
+  top: 72rem;
+}
+
+#kepalasekolah-tautan a {
+  max-width: 320px;
+  display: flex;
+  position: relative;
+  padding: 19px 0 19px 19px;
+  border: 1px solid black;
+  top: 74rem;
+  right: 20rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+#kepalasekolah-tautan #arsip {
+  position: relative;
+  bottom: 15px;
+  top: 10rem;
+}
+
+#kepalasekolah-tautan #arsip h2 {
+  position: relative;
+  right: 20rem;
+  border-bottom: 2px solid rgb(200, 141, 40);
+  width: 320px;
+  top: 66rem;
+}
+
+#kepalasekolah-tautan #arsip a {
+  max-width: 320px;
+  display: flex;
+  position: relative;
+  padding: 19px 0 17px 19px;
+  border: 1px solid black;
+  top: 67rem;
+  right: 20rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+#kepalasekolah-tautan {
+  position: relative;
+  top: 20px;
+}
+
+#kepalasekolah-tautan #arsip a p {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 12rem;
+  border: 1px solid black;
+  padding: 8px 10px 8px 10px;
+  font-size: 15px;
+}
+
+#kepalasekolah-tautan #arsip-a {
+  position: relative;
+  top: 5.9rem;
+}
+
+#kepalasekolah-tautan #arsip-a a {
+  max-width: 320px;
+  display: flex;
+  position: relative;
+  padding: 20px 0 17px 19px;
+  border: 1px solid black;
+  top: 71.6rem;
+  right: 20rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+#kepalasekolah-tautan #arsip-a a p {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 12.75rem;
+  border: 1px solid black;
+  padding: 8px 10px 8px 10px;
+  font-size: 15px;
+}
+
+#kepalasekolah-tautan #jajakpendapat {
+  position: relative;
+  top: 5rem;
+}
+
+#kepalasekolah-tautan #jajakpendapat h1 {
+  padding: 20px;
+}
+
+#kepalasekolah-tautan #jajakpendapat #jajakpendapat-content {
+  border: 1px solid black;
+  max-width: 320px;
+  padding: 30px;
+  position: relative;
+  top: 73rem;
+  right: 20rem;
+}
+
+#kepalasekolah-tautan
+  #jajakpendapat
+  #jajakpendapat-content
+  #jajakpendapat-input {
+  padding: 10px;
+  display: block;
+  position: relative;
+  padding-left: 1.24rem;
+  border-bottom: 1px solid black;
+}
+
+#kepalasekolah-tautan
+  #jajakpendapat
+  #jajakpendapat-content
+  #jajakpendapat-btn
+  button {
+  position: relative;
+  top: 10px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(255, 113, 62);
+  color: white;
+  border: none;
+
+  outline: none;
+}
+
+#kepalasekolah-tautan
+  #jajakpendapat
+  #jajakpendapat-content
+  #jajakpendapat-btn
+  a {
+  position: relative;
+  max-width: 80px;
+  left: 0.2px;
+  top: 10px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(255, 113, 62);
+  color: white;
+  border: none;
+  outline: none;
+}
+
+#kepalasekolah-tautan #jajakpendapat #jajakpendapat-content #jajakpendapat-btn {
+  display: flex;
+}
+
+#kepalasekolah-tautan
+  #jajakpendapat
+  #jajakpendapat-content
+  #jajakpendapat-btn
+  button:hover {
+  background-color: #111b51;
+  transition: 0.5s;
+}
+#kepalasekolah-tautan
+  #jajakpendapat
+  #jajakpendapat-content
+  #jajakpendapat-btn
+  a:hover {
+  background-color: #111b51;
+  transition: 0.5s;
+}

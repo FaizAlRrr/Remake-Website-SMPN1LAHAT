@@ -7,7 +7,7 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  padding-bottom: 1000px;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -65,7 +65,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 200;
 }
 
 .daftar a {
@@ -173,6 +173,7 @@ body {
   max-width: 60%;
   padding: 5px;
   border: 1px solid black;
+  float: left;
 }
 
 .card-info #info-content {
@@ -205,17 +206,101 @@ body {
   color: rgb(57, 103, 150);
 }
 
+/* Foto Terbaru */
+.all-album {
+  position: relative;
+  bottom: 5rem;
+}
+
+.album {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  left: 18rem;
+}
+.album2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  position: relative;
+  left: 115px;
+  bottom: 320px;
+}
+
+.album .foto-terbaru,
+.album2 .foto-terbaru {
+  position: relative;
+  bottom: 68rem;
+  padding: 5px;
+  right: 26rem;
+}
+
+.album h5 {
+  position: relative;
+  bottom: 70rem;
+  right: 16rem;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  max-width: 50%;
+}
+
+.album .foto-terbaru #foto-terbaru-content,
+.album2 .foto-terbaru #foto-terbaru-content {
+  border: 1px solid black;
+  flex-wrap: wrap;
+  max-width: 65%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.album .foto-terbaru #foto-terbaru-content #foto-terbaru-text,
+.album2 .foto-terbaru #foto-terbaru-content #foto-terbaru-text {
+  width: 200px;
+  padding: 10px;
+}
+.album .foto-terbaru #foto-terbaru-content #foto-terbaru-text a,
+.album2 .foto-terbaru #foto-terbaru-content #foto-terbaru-text a {
+  width: 200px;
+}
+
+.album .foto-terbaru a,
+.album2 .foto-terbaru a {
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.album .foto-terbaru p,
+.album2 .foto-terbaru p {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 0 10px 0;
+}
+
+.album .foto-terbaru #foto-terbaru-content img,
+.album2 .foto-terbaru #foto-terbaru-content img {
+  padding: 5px 1px 5px 1px;
+  width: 90%;
+  height: auto;
+  border: none;
+}
+
+/* kepalasekolah */
 .kepalasekolah {
   position: relative;
-  bottom: 114rem;
+  z-index: ;
+  bottom: 116rem;
   flex: 2;
   order: 2;
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 6rem;
-  left: 260px;
+  left: 854px;
   flex-wrap: wrap;
+  z-index: 15;
 }
 
 .kepalasekolah #kepalasekolah-content {
@@ -223,6 +308,8 @@ body {
   text-align: center;
   padding-bottom: 1.2rem;
   max-width: 320px;
+  position: relative;
+  bottom: 100px;
 }
 
 .kepalasekolah #kepalasekolah-content img {
@@ -381,7 +468,6 @@ body {
   background-color: rgb(255, 113, 62);
   color: white;
   border: none;
-
   outline: none;
 }
 
@@ -421,3 +507,59 @@ body {
   background-color: #111b51;
   transition: 0.5s;
 }
+
+#kepalasekolah-tautan #jajakpendapat #jajakpendapat-content .berlangganan {
+  position: relative;
+  top: 14px;
+  padding: 10px;
+}
+
+#kepalasekolah-tautan #jajakpendapat #jajakpendapat-content .berlangganan h3 {
+  padding: 5px;
+}
+
+#kepalasekolah-tautan #jajakpendapat #jajakpendapat-content .berlangganan {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#kepalasekolah-tautan
+  #jajakpendapat
+  #jajakpendapat-content
+  .berlangganan
+  input {
+  font-size: 14px;
+  padding: 4px;
+  outline: none;
+}
+
+/* VIDEO */
+
+.video {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 65%;
+}
+
+.page-title {
+  position: relative;
+  bottom: 91rem;
+  font-size: 24px;
+  font-weight: bold;
+  left: 30px;
+  border-bottom: 2px solid orange;
+  width: 46%;
+}
+
+.video .ytp-cued-thumbnail-overlay-image {
+  padding: 10px;
+  max-width: 2560px;
+  display: flex;
+  position: relative;
+  bottom: 90rem;
+  left: 8.1rem;
+  max-height: 1440;
+}
+
+/* FOOTER */
